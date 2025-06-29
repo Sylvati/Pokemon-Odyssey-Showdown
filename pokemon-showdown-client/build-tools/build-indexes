@@ -10,7 +10,7 @@ process.chdir(rootDir);
 
 if (!fs.existsSync("caches/pokemon-showdown")) {
 	child_process.execSync(
-		"git clone https://github.com/Sylvati/pokemon-showdown-odysseymod.git",
+		"git clone https://github.com/Sylvati/pokemon-showdown-odysseymod.git pokemon-showdown",
 		{
 			cwd: "caches",
 		}

@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 if (!require("assert").strict) {
 	console.error(
 		"We require Node.js version 10 or later; you're using " + process.version
@@ -38,8 +37,11 @@ var full = "";
 
 switch (process.argv[2] || "") {
 	case "full":
+		console.log("DOING BUILD INDEXES");
 		execSync(`node ./build-tools/build-indexes`, options);
+		console.log("DOING BUILD LEARNSETS");
 		execSync(`node ./build-tools/build-learnsets`, options);
+		console.log("DOING BUILD MINIDEXES");
 		execSync(`node ./build-tools/build-minidex`, options);
 		full = " full";
 		break;
