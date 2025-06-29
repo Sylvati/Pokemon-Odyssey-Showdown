@@ -23,3 +23,18 @@ You can add new ones too I think.
 go to Pokemon Odyssey Showdown\pokemon-showdown-client\play.pokemonshowdown.com\data\pokedex.js and edit them the same way.
 
 Pokemon Odyssey Showdown\pokemon-showdown-client\play.pokemonshowdown.com\data\pokedex.js
+
+Edit this line
+
+```js
+if (!fs.existsSync("caches/pokemon-showdown")) {
+  child_process.execSync(
+    "git clone https://github.com/Sylvati/pokemon-showdown-odysseymod.git",
+    {
+      cwd: "caches",
+    }
+  );
+}
+```
+
+in build-indexes to make it use your server repo
