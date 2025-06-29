@@ -1,4 +1,4 @@
-# This is the Pokemon Odyssey Showdown repo
+# This is an unofficial Pokemon Odyssey Showdown repo
 
 ## How to run
 
