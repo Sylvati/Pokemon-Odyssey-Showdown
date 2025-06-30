@@ -1,4 +1,7 @@
 @echo off
+:: 🧹 Clear the Pokémon Showdown cache
+rmdir /s /q "%~dp0pokemon-showdown-client\caches\pokemon-showdown"
+
 :: 🚀 Launch the server in a new window that stays open
 start "Showdown Server" cmd /k ^
   "cd /d "%~dp0../pokemon-showdown" && npm install && npm run build && node pokemon-showdown start --no-security"
