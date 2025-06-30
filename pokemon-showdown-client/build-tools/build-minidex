@@ -47,8 +47,8 @@ function updateSizes() {
 			let spriteid = species.spriteid;
 			if (formeName)
 				spriteid += "-" + toID(formeName).slice(species.id.length);
-			//const id = toID(spriteid);
-			const id = baseid;
+			const id = toID(spriteid);
+			//const id = baseid;
 
 			{
 				const row = { num: species.num };
